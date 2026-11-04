@@ -1,0 +1,10 @@
+{
+  "id": "pdf-companion-note",
+  "name": "PDF Companion Note",
+  "version": "1.0.0",
+  "minAppVersion": "1.5.7",
+  "description": "Shows a note next to every PDF you open, with a button to create one. Notes are kept in a hidden folder.",
+  "author": "Weici Ruan",
+  "authorUrl": "https://github.com/wazeruan",
+  "isDesktopOnly": false
+}
