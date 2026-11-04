@@ -1,4 +1,4 @@
-.pdf-companion-note-placeholder {
+.sidebar-note-placeholder {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -8,6 +8,6 @@
   color: var(--text-muted);
 }
 
-.pdf-companion-note-template {
+.sidebar-note-template {
   width: 100%;
 }

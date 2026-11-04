@@ -1,6 +1,6 @@
 const { Plugin, ItemView, TFile, Notice, normalizePath, PluginSettingTab, Setting } = require("obsidian");
 
-const VIEW_TYPE = "pdf-companion-note-placeholder";
+const VIEW_TYPE = "sidebar-note-placeholder";
 const ICON = "notebook-pen";
 
 const DEFAULT_SETTINGS = {
@@ -31,7 +31,7 @@ class PlaceholderView extends ItemView {
   render() {
     const el = this.contentEl;
     el.empty();
-    el.addClass("pdf-companion-note-placeholder");
+    el.addClass("sidebar-note-placeholder");
     const pdf = this.pdfPath ? this.app.vault.getFileByPath(this.pdfPath) : null;
     if (!pdf) {
       el.createEl("p", { text: "Open a PDF to see its note here." });
@@ -43,7 +43,7 @@ class PlaceholderView extends ItemView {
   }
 }
 
-module.exports = class PdfCompanionNote extends Plugin {
+module.exports = class SidebarNote extends Plugin {
   async onload() {
     this.settings = Object.assign({}, DEFAULT_SETTINGS, await this.loadData());
     this.buttons = new Map(); // PDF view -> header button
@@ -136,7 +136,7 @@ module.exports = class PdfCompanionNote extends Plugin {
       else await leaf.setViewState({ type: VIEW_TYPE, state: { pdf: pdf.path }, active: false });
       if (this.settings.where === "sidebar") await this.app.workspace.revealLeaf(leaf);
     } catch (e) {
-      console.error("PDF Companion Note:", e);
+      console.error("Sidebar Note:", e);
     }
   }
 
@@ -156,8 +156,8 @@ module.exports = class PdfCompanionNote extends Plugin {
       await leaf.openFile(note, { active: true });
       if (this.settings.where === "sidebar") await this.app.workspace.revealLeaf(leaf);
     } catch (e) {
-      console.error("PDF Companion Note:", e);
-      new Notice(`PDF Companion Note: couldn't create the note (${e.message})`);
+      console.error("Sidebar Note:", e);
+      new Notice(`Sidebar Note: couldn't create the note (${e.message})`);
     }
   }
 
@@ -244,7 +244,7 @@ class SettingsTab extends PluginSettingTab {
       .addTextArea((t) => {
         t.setValue(s.template).onChange(save("template"));
         t.inputEl.rows = 8;
-        t.inputEl.addClass("pdf-companion-note-template");
+        t.inputEl.addClass("sidebar-note-template");
       });
   }
 }

@@ -1,4 +1,4 @@
-# PDF Companion Note
+# Sidebar Note
 
 An [Obsidian](https://obsidian.md) plugin that keeps a note next to every PDF you read.
 
@@ -12,17 +12,17 @@ Works well with [PDF++](https://github.com/RyotaUshio/obsidian-pdf-plus): copy a
 ## Install
 
 ### From Community plugins
-Search for **PDF Companion Note** in *Settings → Community plugins → Browse* (once it's listed).
+Search for **Sidebar Note** in *Settings → Community plugins → Browse* (once it's listed).
 
 ### With BRAT
 1. Install the **BRAT** community plugin.
 2. Run **BRAT: Add a beta plugin for testing** and enter `wazeruan/obsidian-pdf-companion-note`.
-3. Enable **PDF Companion Note** in *Settings → Community plugins*.
+3. Enable **Sidebar Note** in *Settings → Community plugins*.
 
 ### Manually
 1. Download `main.js`, `manifest.json` and `styles.css` from the [latest release](https://github.com/wazeruan/obsidian-pdf-companion-note/releases/latest).
-2. Put them in `<your vault>/.obsidian/plugins/pdf-companion-note/`.
-3. Reload Obsidian and enable **PDF Companion Note** in *Settings → Community plugins*.
+2. Put them in `<your vault>/.obsidian/plugins/sidebar-note/`.
+3. Reload Obsidian and enable **Sidebar Note** in *Settings → Community plugins*.
 
 ## Settings
 
