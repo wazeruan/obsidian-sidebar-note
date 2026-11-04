@@ -31,7 +31,7 @@ Search for **PDF Companion Note** in *Settings → Community plugins → Browse*
 | Where to show the note | Right sidebar | Right sidebar, or a split pane next to the PDF |
 | Notes folder | `PDF Notes` | Where notes are stored; each note is named after its PDF |
 | Hide notes folder in file explorer | On | Hides the folder from the file explorer only |
-| New note template | Link to PDF + Summary / Notes headings | `{{title}}` = PDF name, `{{pdf}}` = PDF path |
+| New note template | Empty | Optional starting text. `{{title}}` = PDF name, `{{pdf}}` = PDF path |
 
 Command: **Create or open note for current PDF** (assign a hotkey if you like).
 

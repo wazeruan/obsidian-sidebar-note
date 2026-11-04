@@ -7,7 +7,7 @@ const DEFAULT_SETTINGS = {
   where: "sidebar", // "sidebar" or "split"
   notesFolder: "PDF Notes",
   hideFolder: true,
-  template: '---\npdf: "[[{{pdf}}]]"\n---\n# {{title}}\n\n## Summary\n\n## Notes\n',
+  template: "", // new notes start empty
 };
 
 /** Shown in the note pane when the current PDF has no note yet. */
@@ -240,7 +240,7 @@ class SettingsTab extends PluginSettingTab {
 
     new Setting(containerEl)
       .setName("New note template")
-      .setDesc("{{title}} = PDF file name, {{pdf}} = PDF path.")
+      .setDesc("Optional text for new notes (empty by default). {{title}} = PDF file name, {{pdf}} = PDF path.")
       .addTextArea((t) => {
         t.setValue(s.template).onChange(save("template"));
         t.inputEl.rows = 8;
