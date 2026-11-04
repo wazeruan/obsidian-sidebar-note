@@ -16,11 +16,11 @@ Search for **Sidebar Note** in *Settings → Community plugins → Browse* (once
 
 ### With BRAT
 1. Install the **BRAT** community plugin.
-2. Run **BRAT: Add a beta plugin for testing** and enter `wazeruan/obsidian-pdf-companion-note`.
+2. Run **BRAT: Add a beta plugin for testing** and enter `wazeruan/obsidian-sidebar-note`.
 3. Enable **Sidebar Note** in *Settings → Community plugins*.
 
 ### Manually
-1. Download `main.js`, `manifest.json` and `styles.css` from the [latest release](https://github.com/wazeruan/obsidian-pdf-companion-note/releases/latest).
+1. Download `main.js`, `manifest.json` and `styles.css` from the [latest release](https://github.com/wazeruan/obsidian-sidebar-note/releases/latest).
 2. Put them in `<your vault>/.obsidian/plugins/sidebar-note/`.
 3. Reload Obsidian and enable **Sidebar Note** in *Settings → Community plugins*.
 
