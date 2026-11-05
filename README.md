@@ -7,6 +7,8 @@ An [Obsidian](https://obsidian.md) plugin that keeps a note next to every PDF yo
 - **Notes button in the PDF header:** every PDF tab gets a notebook icon that creates or opens its note.
 - **Tidy vault:** all notes live in one folder (`PDF Notes` by default), hidden from the file explorer. They still work with links, search, backlinks and the graph.
 
+![Sidebar Note: a PDF open on the left, its companion note in the right sidebar](assets/screenshot.png)
+
 Works well with [PDF++](https://github.com/RyotaUshio/obsidian-pdf-plus): copy a link to a text selection in the PDF and paste it into the companion note to get a highlight that jumps back to the passage.
 
 ## Install
